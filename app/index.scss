@@ -1,0 +1,137 @@
+body {
+  color: #333;
+  font-family: PostGrotesk, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.teams-landing {
+  .teams-overview {
+
+  }
+  .teams-listing {
+    display: block;
+    padding: 1.8rem 0;
+    overflow: hidden;
+
+    article {
+      padding: 1rem 0;
+      border-top: 1px solid #CCC;
+    }
+    
+
+    .team-image {
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .team-desc {
+      .description {
+        .stats, .info {
+          font-size: .7rem;
+          color: #444;
+
+          .category, .createdDate {
+            border-left: #666 1px solid;
+            margin-left: 5px;
+            padding-left: 8px;
+          }
+        }
+        .loanBecause {
+          margin: .8rem 0;
+        }
+      }
+    }
+  }
+
+  .teams-leaderboards {
+    margin: 1.32rem 0 2rem;
+    border-bottom: 1px solid #CCC;
+
+    .team-score {
+      padding: .5rem 0;
+      margin: .25rem 0;
+      border-top: 1px solid #CCC;
+
+      a.thumb {
+        display: block;
+        margin: 0 .5rem 0 0;
+      }
+
+      .team-name {
+        display: block;
+        // font-size: .8rem;
+      }
+      .fundraising-meter {
+        // height: 1rem;
+        margin: 0;
+      }
+      .meter {
+        // height: 1rem;
+        // line-height: 1rem;
+
+        .small-text {
+          // padding: 0 0 0 .3rem;
+          // line-height: 1rem;
+          // vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .teams-landing {
+    .teams-overview {
+
+    }
+    .teams-listing {
+      .team-image {
+        a {
+          display: block;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .teams-leaderboards {
+      .team-score {
+        .team-name {
+          font-size: .8rem;
+        }
+        .fundraising-meter {
+          height: 1rem;
+          margin: 0;
+        }
+        .meter {
+          height: 1rem;
+          line-height: 1rem;
+
+          .small-text {
+            padding: 0 0 0 .3rem;
+            line-height: 1rem;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+  }
+}
