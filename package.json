@@ -2,7 +2,7 @@
   "name": "kiva-page-mocks",
   "version": "1.0.0",
   "description": "",
-  "repository": "mcstover/kiva-teams-mocks"
+  "repository": "mcstover/kiva-teams-mocks",
   "main": "index.js",
   "scripts": {
     "wpk-dev": "webpack-dev-server",
@@ -18,7 +18,7 @@
     ]
   },
   "dependencies": {
-    "styleguide": "git+ssh://git@github.com:kiva/styleguide"
+    "styleguide": "git@github.com:kiva/styleguide.git"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
