@@ -2,6 +2,7 @@
   "name": "kiva-page-mocks",
   "version": "1.0.0",
   "description": "",
+  "repository": "mcstover/kiva-teams-mocks"
   "main": "index.js",
   "scripts": {
     "wpk-dev": "webpack-dev-server",
