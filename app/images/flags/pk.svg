@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <rect id="a" width="682.67" height="512" x=".666"/>
+    <rect id="c" width="640" height="480"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(-45)">
+      <mask id="b" fill="white">
+        <use xlink:href="#a"/>
+      </mask>
+      <g transform="translate(13)" mask="url(#b)">
+        <rect width="720" height="480" fill="#0C590B" fill-rule="nonzero"/>
+        <rect width="180.488" height="480" fill="#FFFFFF" fill-rule="nonzero"/>
+        <g transform="translate(260.365 129.81)">
+          <polygon fill="#FFFFFF" fill-rule="nonzero" points="207.168 81.502 177.951 75.356 162.587 100.955 159.403 71.269 130.308 64.566 157.558 52.365 154.941 22.623 174.966 44.769 202.443 33.09 187.57 58.978 207.169 81.502"/>
+          <path fill="#FFFFFF" fill-rule="nonzero" d="M218.187061,157.145098 C192.250492,214.29547 124.177131,239.259142 66.864609,212.710826 C9.54471656,186.15514 -15.4263257,118.08915 11.1293606,60.7692572 C24.6732766,31.5344168 46.8376562,11.4440783 78.1251634,0.479078437 C74.5264736,3.52233208 70.9655941,6.67901676 67.0636108,10.7055605 C26.6470797,52.4156033 27.6973671,119.073103 69.4066729,159.485212 C111.116716,199.901743 177.774215,198.852193 218.186324,157.14215 L218.187061,157.145098 Z"/>
+        </g>
+      </g>
+    </g>
+    <mask id="d" fill="white">
+      <use xlink:href="#c"/>
+    </mask>
+    <rect width="640" height="480" stroke="#999999" stroke-width="4" mask="url(#d)"/>
+  </g>
+</svg>

@@ -31,6 +31,12 @@ const config = {
         })
       }
       // ,
+      // {
+      //   test: /\.svg$/,
+      //   loader: 'svg-inline-loader?classPrefix!../node_modules/styleguide/export/images/icons.svg'
+      // }
+
+      // ,
       // { test: /\.css$/, use: [ 'style-loader', 'css-loader?-url', 'sass-loader?-url' ]}
     ]
   },
