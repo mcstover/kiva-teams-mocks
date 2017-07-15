@@ -11,6 +11,11 @@ const config = {
     filename: 'index_bundle.js',
     publicPath: '/'
   },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    }
+  },
   module: {
     rules: [
       { 
@@ -59,8 +64,9 @@ const config = {
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
       }
-    }),
-    new webpack.optimize.UglifyJsPlugin()
+    })
+    // ,
+    // new webpack.optimize.UglifyJsPlugin()
   )
 // }
 

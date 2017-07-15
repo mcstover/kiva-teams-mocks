@@ -18,7 +18,8 @@
     ]
   },
   "dependencies": {
-    "styleguide": "git@github.com:kiva/styleguide.git"
+    "styleguide": "git@github.com:kiva/styleguide.git",
+    "vue": "^2.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

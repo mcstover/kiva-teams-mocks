@@ -17,6 +17,15 @@
             <p>To get started, simply join an existing team or create a new one and invite your friends!</p>
           </div>
 
+          <div id="teamListing" class="teams-listing">
+            <ul>
+              <team
+                v-for="team in teams"
+                v-bind:team="team"
+                v-bind:key="team.id"></team>
+            </ul>
+          </div>
+<!-- 
           <div class="teams-listing">
             <ul>
               <li>
@@ -42,7 +51,8 @@
                     </div>
                   </div>
                 </article>
-
+              </li>
+              <li>
                 <article class="row">
                   <div class="team-image small-5 small-centered medium-3 medium-uncentered columns">
                     <a class="" href="https://www.kiva.org/team/nerdfighters"><img src="https://www-kiva-org-1.global.ssl.fastly.net/img/s135/1364412.jpg" alt="Nerdfighters" title="Nerdfighters" width="135" height="135"></a>
@@ -65,7 +75,8 @@
                     </div>
                   </div>
                 </article>
-                
+              </li>
+              <li>
                 <article class="row">
                   <div class="team-image small-5 small-centered medium-3 medium-uncentered columns">
                     <a class="" href="https://www.kiva.org/team/nerdfighters"><img src="https://www-kiva-org-1.global.ssl.fastly.net/img/s135/1364412.jpg" alt="Nerdfighters" title="Nerdfighters" width="135" height="135"></a>
@@ -91,9 +102,21 @@
               </li>
             </ul>
           </div>
+           -->
         </div>
 
         <div class="columns small-12 large-4">
+          <div id="teamLeaderBoard" class="teams-leaderboards">
+            <h4>Team Leaderboards</h4>
+            <p>Amount Loaned</p>
+            <ul class="leaderboard-list">
+              <leader
+                v-for="leader in leaders"
+                v-bind:leader="leader"
+                v-bind:key="leader.id"></leader>
+            </ul>
+          </div>
+<!-- 
           <div class="teams-leaderboards">
             <h4>Team Leaderboards</h4>
             <p>Amount Loaned</p>
@@ -135,6 +158,7 @@
 							</li>
             </ul>
           </div>
+           -->
         </div>
     </div>
   </body>
