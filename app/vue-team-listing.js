@@ -81,6 +81,32 @@ var mainTeamList = new Vue({
   }
 })
 
+/*
+Raw Graphiql Query
+
+{
+  teams (sortBy: overallLoanedAmount, limit: 6) {
+    values {
+      id
+      teamPublicId
+      name
+      category
+      image {
+        id
+      }
+      whereabouts
+      loanBecause
+      url
+      createdDate
+      membershipType
+      lenderCount
+      loanCount
+      lentAmount
+    }
+  }
+}
+*/
+
 /* Original HTML
 
 <li>
