@@ -9,11 +9,11 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
-    publicPath: '/'
+    publicPath: ''
   },
   module: {
     rules: [
-      { 
+      {
         test: /\.(js)$/,
         loader: 'babel-loader',
         include: [
@@ -29,7 +29,11 @@ const config = {
           fallback: 'style-loader?-url',
           use: 'css-loader?-url!sass-loader?-url'
         })
-      }
+      },
+			{
+				test: /\.vue$/,
+				loader: 'vue-loader'
+			}
       // ,
       // {
       //   test: /\.svg$/,
@@ -43,14 +47,15 @@ const config = {
   plugins: [
     new ExtractTextPlugin('extracted.css'),
     // Make sure this is after ExtractTextPlugin!
-    new PurifyCSSPlugin({
-      // Give paths to parse for rules. These should be absolute!
-      paths: [path.join(__dirname, 'app/index.html')]
-    }),
+    // new PurifyCSSPlugin({
+    //   // Give paths to parse for rules. These should be absolute!
+    //   paths: [path.join(__dirname, 'app/index.html')]
+    // }),
     new HtmlWebpackPlugin({
       template: 'app/index.html'
     })
-  ]
+  ],
+	devtool: 'source-map'
 };
 
 // if (process.env.NODE_ENV === 'production') {
@@ -60,7 +65,9 @@ const config = {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
       }
     }),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin({
+			sourceMap: true
+		})
   )
 // }
 
