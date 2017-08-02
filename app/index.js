@@ -1,3 +1,11 @@
+import './styles.css';
+import './index.scss';
 
-require('../node_modules/styleguide/export/styles.css');
-require('./index.scss');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('main')
+);

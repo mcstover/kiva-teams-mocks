@@ -13,7 +13,7 @@ const config = {
   },
   module: {
     rules: [
-      { 
+      {
         test: /\.(js)$/,
         loader: 'babel-loader',
         include: [
@@ -43,10 +43,10 @@ const config = {
   plugins: [
     new ExtractTextPlugin('extracted.css'),
     // Make sure this is after ExtractTextPlugin!
-    new PurifyCSSPlugin({
-      // Give paths to parse for rules. These should be absolute!
-      paths: [path.join(__dirname, 'app/index.html')]
-    }),
+    // new PurifyCSSPlugin({
+    //   // Give paths to parse for rules. These should be absolute!
+    //   paths: [path.join(__dirname, 'app/index.html')]
+    // }),
     new HtmlWebpackPlugin({
       template: 'app/index.html'
     })
